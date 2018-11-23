@@ -20,23 +20,23 @@ public class Aufgabe2<zufallszahl, gerade>
         } else {
             JOptionPane.showMessageDialog(null, zufallszahl + " ist nicht gerade!");
         }*/
-        String rueckgabe;
-        rueckgabe = JOptionPane.showInputDialog(null, " gib mir bitte eine Ganzzahl, die zwischen 1 und 10 liegt");
+        for (int i=0; i<3; i++) {
+            String rueckgabe;
+            rueckgabe = JOptionPane.showInputDialog(null, " gib mir bitte eine Ganzzahl, die zwischen 1 und 10 liegt");
 
-        if (Integer.parseInt(rueckgabe) == zufallszahl)
-        {
-            JOptionPane.showMessageDialog(null, "Deine Zahl ist gleich");
-        }
-        else if ((Integer.parseInt(rueckgabe)- zufallszahl) >= -2 && (Integer.parseInt(rueckgabe)- zufallszahl) <= 2) {  //Aufgabe3
+            if (Integer.parseInt(rueckgabe) == zufallszahl)
+            {
+                JOptionPane.showMessageDialog(null, "Deine Zahl ist gleich");
+                break;
+            } else if ((Integer.parseInt(rueckgabe) - zufallszahl) >= -2 && (Integer.parseInt(rueckgabe) - zufallszahl) <= 2) {  //Aufgabe3
 
-            JOptionPane.showMessageDialog(null, "Deine Zahl ist innerhalb der grenz +2 oder -2");
-        }
-        else {
+                JOptionPane.showMessageDialog(null, "Deine Zahl ist innerhalb der grenz +2 oder -2");
+            } else {
 
-            JOptionPane.showMessageDialog(null,"Deine Zahl ist nicht gleich");
-
+                JOptionPane.showMessageDialog(null, "Deine Zahl ist nicht gleich");
 
 
+            }
         }
 
 
