@@ -28,16 +28,19 @@ public class Aufgabe2<zufallszahl, gerade>
             {
                 JOptionPane.showMessageDialog(null, "Deine Zahl ist gleich");
                 break;
-            } else if ((Integer.parseInt(rueckgabe) - zufallszahl) >= -2 && (Integer.parseInt(rueckgabe) - zufallszahl) <= 2) {  //Aufgabe3
+            } else if ((Integer.parseInt(rueckgabe) - zufallszahl) >= -2 && (Integer.parseInt(rueckgabe) - zufallszahl) <= 2)
+            {  //Aufgabe3
 
-                JOptionPane.showMessageDialog(null, "Deine Zahl ist innerhalb der grenz +2 oder -2");
+                JOptionPane.showMessageDialog(null, "Deine Zahl ist innerhalb der Grenze +2 oder -2");
             } else {
 
                 JOptionPane.showMessageDialog(null, "Deine Zahl ist nicht gleich");
-
-
             }
-        }
+            if (i == 2)
+            {
+                JOptionPane.showMessageDialog(null,"Ihre 3 Versuche waren falsch!");
+            }
+            }
 
 
     }
